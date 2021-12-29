@@ -25,8 +25,9 @@ shinyUI(fluidPage(
          
                        p("Important information:", align = "center", style = "font-size: 20px; margin-top: 80px"),
                        tags$ul(
-                         tags$li("The model does not use any stopwords such as: the, a, not, so, what, i, me, etc.;", align = "left"), 
-                         tags$li("The model does not check for spelling errors;", align = "left"), 
+                         tags$li("The model does not understand punctuation (write im instead of i'm);", align = "left"), 
+                         tags$li("The application does not check for spelling errors;", align = "left"), 
+                         tags$li("The application does not recognize capital letters;", align = "left"), 
                          tags$li("If a word is not recognized by the model, the output will be NA. Simply delete the word and try another.", align = "left")
                        ),
                    
